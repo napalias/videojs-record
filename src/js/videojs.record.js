@@ -495,7 +495,7 @@ class Record extends Plugin {
                 };
                 navigator.mediaDevices.getUserMedia({
                     audio: this.recordAudio,
-                    video: this.recordVideo
+                    video: this.recordVideo.mandatory
                 }).then(
                     this.onDeviceReady.bind(this)
                 ).catch(
